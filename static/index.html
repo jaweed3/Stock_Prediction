@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Stock Prediction</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tesla Stock Price Prediction</h1>
+            <p class="subtitle">Powered by LSTM Neural Networks</p>
+        </header>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2>Get Prediction</h2>
+            </div>
+            <div class="card-body">
+                <p>Click the button below to get the latest Tesla stock price prediction.</p>
+                <button id="predictBtn" class="btn primary">Get Latest Prediction</button>
+                
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Processing data and generating prediction...</p>
+                </div>
+                
+                <div id="result" class="result-container">
+                    <div class="result-header">Prediction Results</div>
+                    <div class="result-body">
+                        <div class="result-item">
+                            <div class="label">Predicted Price:</div>
+                            <div id="predictedPrice" class="value price"></div>
+                        </div>
+                        <div class="result-item">
+                            <div class="label">Latest Actual Price:</div>
+                            <div id="actualPrice" class="value price"></div>
+                        </div>
+                        <div class="result-item">
+                            <div class="label">Difference:</div>
+                            <div id="difference" class="value"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2>About This Model</h2>
+            </div>
+            <div class="card-body">
+                <p>This application uses a Long Short-Term Memory (LSTM) neural network to predict Tesla's stock price based on historical data.</p>
+                <p>The model analyzes patterns in:</p>
+                <ul>
+                    <li>Historical prices (Open, Close, High, Low)</li>
+                    <li>Trading volume</li>
+                    <li>Technical indicators (Moving Averages, RSI, MACD, Bollinger Bands)</li>
+                </ul>
+                <p>The prediction is based on the last 60 days of trading data.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Tesla Stock Prediction API | Created with TensorFlow and FastAPI</p>
+        </footer>
+    </div>
+    
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
