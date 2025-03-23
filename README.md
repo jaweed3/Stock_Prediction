@@ -27,8 +27,8 @@ This project builds a **time series forecasting model** to predict Tesla's stock
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/tesla-stock-prediction.git
-   cd tesla-stock-prediction
+   git clone https://github.com/yourusername/Stock_Prediction.git
+   cd Stock_Prediction
    ```
 2. Install dependencies:
    ```bash
